@@ -1,5 +1,10 @@
 # Update
 
+## 2025-01-05
+
+- add a new `stopping hedge condition` when net_position is large than 5*order qty
+- update on error handling for bingx's get position amount api.
+
 ## 2024-12-18
 
 - fix trading in dual position mode for bingx
