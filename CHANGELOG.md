@@ -1,5 +1,12 @@
 # Update
 
+## 2025-01-23
+
+- adjust waiting time for receiving messages from binance to avoid some timestamp issues.
+- add parameter `self.request_position_failed` to distinguish `stop_trade` situations:
+    * if not failed in requesting position, then wait for auto-hedging to be finished.
+    * if failed in requesting position, then stop placing orders & auto-hedging immediately.
+
 ## 2025-01-05
 
 - add a new `stopping hedge condition` when net_position is large than 5*order qty
